@@ -1,0 +1,33 @@
+body {
+    /* background-color: #29786F */
+}
+
+#title {
+    text-align:center;
+    font-family: 'Ubuntu', sans-serif;
+    /* background-color:   #3CCFBF; */
+}
+
+#instructions {
+    text-align:center;
+}
+
+#crystalRow {
+    text-align: center;
+    width: 100%;
+    border-style: double;
+}
+
+#randomNum {
+    border-right: 2px solid;
+}
+
+#scoreRow {
+    text-align: center;
+    width: 100%;
+    border-style: double;
+}
+
+#userScore {
+    border-right: 2px solid;
+}
