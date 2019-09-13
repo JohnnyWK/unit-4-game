@@ -10,10 +10,6 @@ $(document).ready(function () {
     var minAnswer = [19]
     var maxAnswer = [120]
 
-    function play() {
-        var audio = document.getElementById("audio");
-        audio.play();
-    }
 
     function randomNumber(max, min) {
         return Math.floor(Math.random() * (max - min + 1) + min);
@@ -45,21 +41,19 @@ $(document).ready(function () {
         $("#currentScore").text(userNum);
         if (userNum === answer) {
             // console.log("You win");
-            reset();
             wins++;
             $("#wins").text(wins);
             $("#alerth3").text("YOU WIN")
-
+            reset();
 
         }
         else if (userNum > answer) {
             // console.log("YOU LOSE!");
-            reset();
+            // reset();
             losses++;
             // console.log(losses);
             $("#losses").text(losses);
             $("#alerth3").text("YOU LOSE")
         }
     })
-
 })
