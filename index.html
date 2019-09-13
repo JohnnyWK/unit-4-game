@@ -19,7 +19,7 @@
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:700&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -27,7 +27,12 @@
     <div class="jumbotron jumbotron-fluid" id="title">
         <div class="container">
             <h1 class="display-4">The Crystal Game</h1>
-            <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+            <p class="lead" id="tunes">Enjoy Some Crystalized Tunes While You Play...</p>
+            <iframe src="https://open.spotify.com/embed/track/3yQFmN8A5S8Kf1nUJuvb01" width="250" height="250"
+                frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed/track/1NWaL5KqawMUlwTdz2ZtaM" width="250" height="250"
+                frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <h3 id="alerth3"></h3>
         </div>
     </div>
 
@@ -35,36 +40,50 @@
         <div class="row">
             <div class="col-md-12" id="instructions">
                 <!-- INSTRUCTIONS PLACEHOLDER -->
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur laborum
-                nobis eius neque provident corporis, praesentium minima vel cumque libero laudantium quisquam rem
-                quaerat autem accusantium voluptatem ipsam nulla? Cupiditate.Ea, ab?
+                It's everyone's favorite American Pastime <b>THE CRYSTAL GAME!</b>
+                You probably already know the rules, who doesn't?  Just in case you don't, though, here are the rules:
+                    <br>
+                    <ul>
+                        <li>
+                            You will be given a goal number, randomized at the beginning of every game.
+                        </li>
+                        <li>
+                            You have 4 crystals, each with a random, unknown value given at the beginning of each game.
+                        </li>
+                        <li>
+                            When you select a crystal, the value of that crystal is added to your number.
+                        </li>
+                        <li>
+                            Match the goal number exactly, DON'T GO OVER, to win!
+                        </li>
+                    </ul>
             </div>
             <div class="row" id="crystalRow">
                 <div class="col-md-6" id="randomNum">
-                    Random # Placeholder
+                    Number goal: <span id="goalScore"></span>
                 </div>
                 <div class="col-md-6" id="crystals">
                     <!-- CRYSTAL IMAGES GO HERE -->
-                    <img id="crystal1" src="assets/images/crystal1.png" alt="Crystal 1">
-                    <img id="crystal2" src="assets/images/crystal2.png" alt="Crystal 2">
-                    <img id="crystal3" src="assets/images/crystal3.png" alt="Crystal 3">
-                    <img id="crystal4" src="assets/images/crystal4.png" alt="Crystal 4">
+                    <img id="crystal1" class="crystal" src="assets/images/crystal1.png" alt="Crystal 1">
+                    <img id="crystal2" class="crystal" src="assets/images/crystal2.png" alt="Crystal 2">
+                    <img id="crystal3" class="crystal" src="assets/images/crystal3.png" alt="Crystal 3">
+                    <img id="crystal4" class="crystal" src="assets/images/crystal4.png" alt="Crystal 4">
                 </div>
             </div>
             <div class="row" id="scoreRow">
                 <div class="col-md-6" id="userScore">
-                    <p>Your Score:</p>
+                    <p>Your Score: <span id="currentScore">0</span></p>
                 </div>
                 <div class="col-md-6" id="winsLosses">
-                    <p>Wins: </p>
-                    <p>Losses: </p>
+                    <p>Wins: <span id="wins">0</span> </p>
+                    <p>Losses: <span id="losses">0</span></p>
                 </div>
             </div>
         </div>
 
 
 
-
+        <script src="assets/js/game.js"></script>
 </body>
 
 </html>

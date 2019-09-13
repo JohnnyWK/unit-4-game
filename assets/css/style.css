@@ -1,15 +1,30 @@
 body {
-    /* background-color: #29786F */
+    background-color: #B8D7FF;
 }
 
 #title {
     text-align:center;
     font-family: 'Ubuntu', sans-serif;
-    /* background-color:   #3CCFBF; */
+    background-color:   #EAF3FF;
+}
+
+#tunes {
+    font-size: 30px;
+    font-family: 'Shadows Into Light', cursive;
+    text-align: center;
 }
 
 #instructions {
     text-align:center;
+}
+
+ul {
+    padding-top: 20px;
+    list-style-type: none;
+}
+
+#alerth3 {
+    font-size: 60px;
 }
 
 #crystalRow {
@@ -18,16 +33,22 @@ body {
     border-style: double;
 }
 
+
 #randomNum {
+    font-size: 50px;
     border-right: 2px solid;
+    padding: 10%;
 }
 
 #scoreRow {
+    font-size: 50px;
     text-align: center;
     width: 100%;
+    /* padding: 10%; */
     border-style: double;
 }
 
 #userScore {
+    padding-top: 5%;
     border-right: 2px solid;
 }
