@@ -16,7 +16,7 @@ $(document).ready(function () {
     }
     function reset() {
         answer = randomNumber(120, 19);
-        // console.log(answer);
+        console.log(answer);
         crystal1Value = randomNumber(1, 12);
         $("#crystal1").attr("data-value", crystal1Value)
         crystal2Value = randomNumber(1, 12);
@@ -49,7 +49,7 @@ $(document).ready(function () {
         }
         else if (userNum > answer) {
             // console.log("YOU LOSE!");
-            // reset();
+            reset();
             losses++;
             // console.log(losses);
             $("#losses").text(losses);
