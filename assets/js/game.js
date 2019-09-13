@@ -28,9 +28,8 @@ $(document).ready(function () {
         userNum = 0;
         $("#goalScore").text(answer);
         $("#alerth3").text(" ");
-
-
     }
+
     reset();
 
     $(".crystal").on("click", function () {
@@ -39,18 +38,19 @@ $(document).ready(function () {
         userNum = userNum + userPicked;
         console.log(userNum);
         $("#currentScore").text(userNum);
+        $("#alerth3").text(" ");
         if (userNum === answer) {
+            reset();
             wins++;
             $("#wins").text(wins);
-            $("#alerth3").text("YOU WIN")
-            reset();
+            $("#alerth3").text("YOU WIN!");
 
         }
         else if (userNum > answer) {
             reset();
             losses++;
             $("#losses").text(losses);
-            $("#alerth3").text("YOU LOSE")
+            $("#alerth3").text("YOU LOSE");
         }
     })
 })
