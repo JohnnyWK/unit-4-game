@@ -40,7 +40,6 @@ $(document).ready(function () {
         console.log(userNum);
         $("#currentScore").text(userNum);
         if (userNum === answer) {
-            // console.log("You win");
             wins++;
             $("#wins").text(wins);
             $("#alerth3").text("YOU WIN")
@@ -48,10 +47,8 @@ $(document).ready(function () {
 
         }
         else if (userNum > answer) {
-            // console.log("YOU LOSE!");
             reset();
             losses++;
-            // console.log(losses);
             $("#losses").text(losses);
             $("#alerth3").text("YOU LOSE")
         }
