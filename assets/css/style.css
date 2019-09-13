@@ -44,7 +44,6 @@ ul {
     font-size: 50px;
     text-align: center;
     width: 100%;
-    /* padding: 10%; */
     border-style: double;
 }
 
@@ -60,6 +59,4 @@ footer {
     height: 60px;
     line-height: 60px;
     background-color: #D1E5FF;
-    /* padding: 5%;
-    text-align: center; */
 }
